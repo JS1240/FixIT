@@ -1,0 +1,6 @@
+framework module Pods_FIXIT_COTests {
+  umbrella header "Pods-FIXIT.COTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

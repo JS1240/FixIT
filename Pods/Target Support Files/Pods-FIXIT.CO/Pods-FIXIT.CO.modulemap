@@ -1,0 +1,6 @@
+framework module Pods_FIXIT_CO {
+  umbrella header "Pods-FIXIT.CO-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75195816FD069D5130FAE3AC /* Pods_FIXIT_CO_FIXIT_COUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEA3E8E885CBA3BBF9F538A /* Pods_FIXIT_CO_FIXIT_COUITests.framework */; };
+		8C4E96CB810F35C070A854CF /* Pods_FIXIT_CO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63BEC4FE0C265BDBCB07798 /* Pods_FIXIT_CO.framework */; };
+		9AD598E1DEFF5028FEF20325 /* Pods_FIXIT_COTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7732DA4F8235A677A72B05 /* Pods_FIXIT_COTests.framework */; };
 		DD13E95A25FA4EAD00D1A07E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13E95925FA4EAD00D1A07E /* AppDelegate.swift */; };
 		DD13E95C25FA4EAD00D1A07E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13E95B25FA4EAD00D1A07E /* SceneDelegate.swift */; };
 		DD13E95E25FA4EAD00D1A07E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13E95D25FA4EAD00D1A07E /* HomeViewController.swift */; };
@@ -25,6 +28,11 @@
 		DD13E9C425FA535A00D1A07E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13E9C325FA535A00D1A07E /* SettingsViewController.swift */; };
 		DD13E9C925FA538C00D1A07E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13E9C825FA538C00D1A07E /* SearchViewController.swift */; };
 		DD13E9CE25FA53A200D1A07E /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13E9CD25FA53A200D1A07E /* SearchResultViewController.swift */; };
+		DD9EB72525FA99FC004DD922 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9EB72425FA99FC004DD922 /* GoogleService-Info.plist */; };
+		DD9EB72E25FAA0B0004DD922 /* DatabseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EB72D25FAA0B0004DD922 /* DatabseManager.swift */; };
+		DD9EB73325FAA23D004DD922 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EB73225FAA23D004DD922 /* AuthManager.swift */; };
+		DD9EB73825FAA2A8004DD922 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EB73725FAA2A8004DD922 /* StorageManager.swift */; };
+		DD9EB75825FABBD5004DD922 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EB75725FABBD5004DD922 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14B08B23CE89D46F3ED008CF /* Pods-FIXIT.CO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIXIT.CO.release.xcconfig"; path = "Target Support Files/Pods-FIXIT.CO/Pods-FIXIT.CO.release.xcconfig"; sourceTree = "<group>"; };
+		4EEA3E8E885CBA3BBF9F538A /* Pods_FIXIT_CO_FIXIT_COUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIXIT_CO_FIXIT_COUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1DEAC8C949E728BF6300ED /* Pods-FIXIT.CO-FIXIT.COUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIXIT.CO-FIXIT.COUITests.debug.xcconfig"; path = "Target Support Files/Pods-FIXIT.CO-FIXIT.COUITests/Pods-FIXIT.CO-FIXIT.COUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A458AB4364C8A8DEED2CAA2E /* Pods-FIXIT.CO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIXIT.CO.debug.xcconfig"; path = "Target Support Files/Pods-FIXIT.CO/Pods-FIXIT.CO.debug.xcconfig"; sourceTree = "<group>"; };
+		AB9DED60C89BD4FFD0D5669A /* Pods-FIXIT.COTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIXIT.COTests.release.xcconfig"; path = "Target Support Files/Pods-FIXIT.COTests/Pods-FIXIT.COTests.release.xcconfig"; sourceTree = "<group>"; };
+		B63BEC4FE0C265BDBCB07798 /* Pods_FIXIT_CO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIXIT_CO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7732DA4F8235A677A72B05 /* Pods_FIXIT_COTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIXIT_COTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89D309CB4F20B3CF1403E9F /* Pods-FIXIT.COTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIXIT.COTests.debug.xcconfig"; path = "Target Support Files/Pods-FIXIT.COTests/Pods-FIXIT.COTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD13E95625FA4EAD00D1A07E /* FIXIT.CO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIXIT.CO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD13E95925FA4EAD00D1A07E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD13E95B25FA4EAD00D1A07E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +85,12 @@
 		DD13E9C325FA535A00D1A07E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DD13E9C825FA538C00D1A07E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DD13E9CD25FA53A200D1A07E /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		DD9EB72425FA99FC004DD922 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DD9EB72D25FAA0B0004DD922 /* DatabseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabseManager.swift; sourceTree = "<group>"; };
+		DD9EB73225FAA23D004DD922 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		DD9EB73725FAA2A8004DD922 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		DD9EB75725FABBD5004DD922 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E1A23AFA026EE8AA422F4ED3 /* Pods-FIXIT.CO-FIXIT.COUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIXIT.CO-FIXIT.COUITests.release.xcconfig"; path = "Target Support Files/Pods-FIXIT.CO-FIXIT.COUITests/Pods-FIXIT.CO-FIXIT.COUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C4E96CB810F35C070A854CF /* Pods_FIXIT_CO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD598E1DEFF5028FEF20325 /* Pods_FIXIT_COTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +114,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75195816FD069D5130FAE3AC /* Pods_FIXIT_CO_FIXIT_COUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185521ADEC563B20E7A35956 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A458AB4364C8A8DEED2CAA2E /* Pods-FIXIT.CO.debug.xcconfig */,
+				14B08B23CE89D46F3ED008CF /* Pods-FIXIT.CO.release.xcconfig */,
+				9E1DEAC8C949E728BF6300ED /* Pods-FIXIT.CO-FIXIT.COUITests.debug.xcconfig */,
+				E1A23AFA026EE8AA422F4ED3 /* Pods-FIXIT.CO-FIXIT.COUITests.release.xcconfig */,
+				D89D309CB4F20B3CF1403E9F /* Pods-FIXIT.COTests.debug.xcconfig */,
+				AB9DED60C89BD4FFD0D5669A /* Pods-FIXIT.COTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C70C7E172C57B2C6C559286E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B63BEC4FE0C265BDBCB07798 /* Pods_FIXIT_CO.framework */,
+				4EEA3E8E885CBA3BBF9F538A /* Pods_FIXIT_CO_FIXIT_COUITests.framework */,
+				CB7732DA4F8235A677A72B05 /* Pods_FIXIT_COTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD13E94D25FA4EAD00D1A07E = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +151,8 @@
 				DD13E96F25FA4EB300D1A07E /* FIXIT.COTests */,
 				DD13E97A25FA4EB300D1A07E /* FIXIT.COUITests */,
 				DD13E95725FA4EAD00D1A07E /* Products */,
+				185521ADEC563B20E7A35956 /* Pods */,
+				C70C7E172C57B2C6C559286E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,8 +224,13 @@
 		DD13E98F25FA4F4800D1A07E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DD9EB72425FA99FC004DD922 /* GoogleService-Info.plist */,
 				DD13E95925FA4EAD00D1A07E /* AppDelegate.swift */,
 				DD13E95B25FA4EAD00D1A07E /* SceneDelegate.swift */,
+				DD9EB72D25FAA0B0004DD922 /* DatabseManager.swift */,
+				DD9EB73225FAA23D004DD922 /* AuthManager.swift */,
+				DD9EB73725FAA2A8004DD922 /* StorageManager.swift */,
+				DD9EB75725FABBD5004DD922 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -204,11 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				DD13E9AB25FA52AB00D1A07E /* Onboarding */,
-				DD13E9B925FA531200D1A07E /* PostViewController.swift */,
-				DD13E9BE25FA533500D1A07E /* EditProfileViewController.swift */,
-				DD13E9C325FA535A00D1A07E /* SettingsViewController.swift */,
-				DD13E9C825FA538C00D1A07E /* SearchViewController.swift */,
-				DD13E9CD25FA53A200D1A07E /* SearchResultViewController.swift */,
+				DD9EB72925FA9F9D004DD922 /* General */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -222,6 +273,18 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		DD9EB72925FA9F9D004DD922 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				DD13E9B925FA531200D1A07E /* PostViewController.swift */,
+				DD13E9BE25FA533500D1A07E /* EditProfileViewController.swift */,
+				DD13E9C325FA535A00D1A07E /* SettingsViewController.swift */,
+				DD13E9C825FA538C00D1A07E /* SearchViewController.swift */,
+				DD13E9CD25FA53A200D1A07E /* SearchResultViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,9 +292,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD13E98025FA4EB300D1A07E /* Build configuration list for PBXNativeTarget "FIXIT.CO" */;
 			buildPhases = (
+				B40BEEFBE4F33C45FAE0EFB8 /* [CP] Check Pods Manifest.lock */,
 				DD13E95225FA4EAD00D1A07E /* Sources */,
 				DD13E95325FA4EAD00D1A07E /* Frameworks */,
 				DD13E95425FA4EAD00D1A07E /* Resources */,
+				297A70FBD91E773996106A82 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,6 +311,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD13E98325FA4EB300D1A07E /* Build configuration list for PBXNativeTarget "FIXIT.COTests" */;
 			buildPhases = (
+				034B5192E6D448EDACB11C1F /* [CP] Check Pods Manifest.lock */,
 				DD13E96825FA4EB300D1A07E /* Sources */,
 				DD13E96925FA4EB300D1A07E /* Frameworks */,
 				DD13E96A25FA4EB300D1A07E /* Resources */,
@@ -264,9 +330,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD13E98625FA4EB300D1A07E /* Build configuration list for PBXNativeTarget "FIXIT.COUITests" */;
 			buildPhases = (
+				47373C9CF5FB65278F04525E /* [CP] Check Pods Manifest.lock */,
 				DD13E97325FA4EB300D1A07E /* Sources */,
 				DD13E97425FA4EB300D1A07E /* Frameworks */,
 				DD13E97525FA4EB300D1A07E /* Resources */,
+				FC4BA6C2A53ADABC0FB4930F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD13E96625FA4EB200D1A07E /* LaunchScreen.storyboard in Resources */,
+				DD9EB72525FA99FC004DD922 /* GoogleService-Info.plist in Resources */,
 				DD13E96325FA4EB200D1A07E /* Assets.xcassets in Resources */,
 				DD13E96125FA4EAD00D1A07E /* Main.storyboard in Resources */,
 			);
@@ -347,6 +416,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		034B5192E6D448EDACB11C1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FIXIT.COTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		297A70FBD91E773996106A82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FIXIT.CO/Pods-FIXIT.CO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FIXIT.CO/Pods-FIXIT.CO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FIXIT.CO/Pods-FIXIT.CO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47373C9CF5FB65278F04525E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FIXIT.CO-FIXIT.COUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B40BEEFBE4F33C45FAE0EFB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FIXIT.CO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC4BA6C2A53ADABC0FB4930F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FIXIT.CO-FIXIT.COUITests/Pods-FIXIT.CO-FIXIT.COUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FIXIT.CO-FIXIT.COUITests/Pods-FIXIT.CO-FIXIT.COUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FIXIT.CO-FIXIT.COUITests/Pods-FIXIT.CO-FIXIT.COUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD13E95225FA4EAD00D1A07E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -356,15 +528,19 @@
 				DD13E9AD25FA52C200D1A07E /* LoginViewController.swift in Sources */,
 				DD13E9C425FA535A00D1A07E /* SettingsViewController.swift in Sources */,
 				DD13E9A225FA51EB00D1A07E /* ProfileViewController.swift in Sources */,
+				DD9EB73325FAA23D004DD922 /* AuthManager.swift in Sources */,
 				DD13E9B525FA52D500D1A07E /* RegistrationViewController.swift in Sources */,
 				DD13E99825FA516000D1A07E /* ExploreViewController.swift in Sources */,
 				DD13E9C925FA538C00D1A07E /* SearchViewController.swift in Sources */,
 				DD13E99D25FA51B900D1A07E /* MyWorkersViewController.swift in Sources */,
+				DD9EB72E25FAA0B0004DD922 /* DatabseManager.swift in Sources */,
 				DD13E95E25FA4EAD00D1A07E /* HomeViewController.swift in Sources */,
 				DD13E95A25FA4EAD00D1A07E /* AppDelegate.swift in Sources */,
 				DD13E9BF25FA533500D1A07E /* EditProfileViewController.swift in Sources */,
 				DD13E9CE25FA53A200D1A07E /* SearchResultViewController.swift in Sources */,
+				DD9EB75825FABBD5004DD922 /* Extensions.swift in Sources */,
 				DD13E95C25FA4EAD00D1A07E /* SceneDelegate.swift in Sources */,
+				DD9EB73825FAA2A8004DD922 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +713,7 @@
 		};
 		DD13E98125FA4EB300D1A07E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A458AB4364C8A8DEED2CAA2E /* Pods-FIXIT.CO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -555,6 +732,7 @@
 		};
 		DD13E98225FA4EB300D1A07E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14B08B23CE89D46F3ED008CF /* Pods-FIXIT.CO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -573,6 +751,7 @@
 		};
 		DD13E98425FA4EB300D1A07E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D89D309CB4F20B3CF1403E9F /* Pods-FIXIT.COTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -594,6 +773,7 @@
 		};
 		DD13E98525FA4EB300D1A07E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB9DED60C89BD4FFD0D5669A /* Pods-FIXIT.COTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -615,6 +795,7 @@
 		};
 		DD13E98725FA4EB300D1A07E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E1DEAC8C949E728BF6300ED /* Pods-FIXIT.CO-FIXIT.COUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -634,6 +815,7 @@
 		};
 		DD13E98825FA4EB300D1A07E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1A23AFA026EE8AA422F4ED3 /* Pods-FIXIT.CO-FIXIT.COUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
