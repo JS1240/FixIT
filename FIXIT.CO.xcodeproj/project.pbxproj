@@ -29,7 +29,7 @@
 		DD13E9C925FA538C00D1A07E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13E9C825FA538C00D1A07E /* SearchViewController.swift */; };
 		DD13E9CE25FA53A200D1A07E /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13E9CD25FA53A200D1A07E /* SearchResultViewController.swift */; };
 		DD9EB72525FA99FC004DD922 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9EB72425FA99FC004DD922 /* GoogleService-Info.plist */; };
-		DD9EB72E25FAA0B0004DD922 /* DatabseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EB72D25FAA0B0004DD922 /* DatabseManager.swift */; };
+		DD9EB72E25FAA0B0004DD922 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EB72D25FAA0B0004DD922 /* DatabaseManager.swift */; };
 		DD9EB73325FAA23D004DD922 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EB73225FAA23D004DD922 /* AuthManager.swift */; };
 		DD9EB73825FAA2A8004DD922 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EB73725FAA2A8004DD922 /* StorageManager.swift */; };
 		DD9EB75825FABBD5004DD922 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EB75725FABBD5004DD922 /* Extensions.swift */; };
@@ -86,7 +86,7 @@
 		DD13E9C825FA538C00D1A07E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DD13E9CD25FA53A200D1A07E /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		DD9EB72425FA99FC004DD922 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		DD9EB72D25FAA0B0004DD922 /* DatabseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabseManager.swift; sourceTree = "<group>"; };
+		DD9EB72D25FAA0B0004DD922 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		DD9EB73225FAA23D004DD922 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		DD9EB73725FAA2A8004DD922 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		DD9EB75725FABBD5004DD922 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 				DD9EB72425FA99FC004DD922 /* GoogleService-Info.plist */,
 				DD13E95925FA4EAD00D1A07E /* AppDelegate.swift */,
 				DD13E95B25FA4EAD00D1A07E /* SceneDelegate.swift */,
-				DD9EB72D25FAA0B0004DD922 /* DatabseManager.swift */,
+				DD9EB72D25FAA0B0004DD922 /* DatabaseManager.swift */,
 				DD9EB73225FAA23D004DD922 /* AuthManager.swift */,
 				DD9EB73725FAA2A8004DD922 /* StorageManager.swift */,
 				DD9EB75725FABBD5004DD922 /* Extensions.swift */,
@@ -533,7 +533,7 @@
 				DD13E99825FA516000D1A07E /* ExploreViewController.swift in Sources */,
 				DD13E9C925FA538C00D1A07E /* SearchViewController.swift in Sources */,
 				DD13E99D25FA51B900D1A07E /* MyWorkersViewController.swift in Sources */,
-				DD9EB72E25FAA0B0004DD922 /* DatabseManager.swift in Sources */,
+				DD9EB72E25FAA0B0004DD922 /* DatabaseManager.swift in Sources */,
 				DD13E95E25FA4EAD00D1A07E /* HomeViewController.swift in Sources */,
 				DD13E95A25FA4EAD00D1A07E /* AppDelegate.swift in Sources */,
 				DD13E9BF25FA533500D1A07E /* EditProfileViewController.swift in Sources */,
@@ -719,6 +719,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FIXIT.CO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -738,6 +739,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FIXIT.CO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

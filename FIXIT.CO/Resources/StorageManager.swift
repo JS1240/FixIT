@@ -14,3 +14,4 @@ public class StorageManager {
     
     // public functions/IPs
     // MARK: - Public
+}
