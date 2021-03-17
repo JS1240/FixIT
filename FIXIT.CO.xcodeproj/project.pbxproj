@@ -28,6 +28,7 @@
 		DD13E9C425FA535A00D1A07E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13E9C325FA535A00D1A07E /* SettingsViewController.swift */; };
 		DD13E9C925FA538C00D1A07E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13E9C825FA538C00D1A07E /* SearchViewController.swift */; };
 		DD13E9CE25FA53A200D1A07E /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13E9CD25FA53A200D1A07E /* SearchResultViewController.swift */; };
+		DD18AA50260232A8003436C1 /* FixJobsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18AA4F260232A8003436C1 /* FixJobsTableViewCell.swift */; };
 		DD9EB72525FA99FC004DD922 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9EB72425FA99FC004DD922 /* GoogleService-Info.plist */; };
 		DD9EB72E25FAA0B0004DD922 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EB72D25FAA0B0004DD922 /* DatabaseManager.swift */; };
 		DD9EB73325FAA23D004DD922 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EB73225FAA23D004DD922 /* AuthManager.swift */; };
@@ -85,6 +86,7 @@
 		DD13E9C325FA535A00D1A07E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DD13E9C825FA538C00D1A07E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DD13E9CD25FA53A200D1A07E /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		DD18AA4F260232A8003436C1 /* FixJobsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixJobsTableViewCell.swift; sourceTree = "<group>"; };
 		DD9EB72425FA99FC004DD922 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DD9EB72D25FAA0B0004DD922 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		DD9EB73225FAA23D004DD922 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		DD13E98D25FA4F3400D1A07E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DD18AA4E2602324C003436C1 /* Cells */,
 				DD13E96225FA4EB200D1A07E /* Assets.xcassets */,
 				DD13E99325FA504100D1A07E /* Storyboards */,
 			);
@@ -271,6 +274,14 @@
 				DD13E9B425FA52D500D1A07E /* RegistrationViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DD18AA4E2602324C003436C1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DD18AA4F260232A8003436C1 /* FixJobsTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		DD9EB72925FA9F9D004DD922 /* General */ = {
@@ -537,6 +548,7 @@
 				DD13E95E25FA4EAD00D1A07E /* HomeViewController.swift in Sources */,
 				DD13E95A25FA4EAD00D1A07E /* AppDelegate.swift in Sources */,
 				DD13E9BF25FA533500D1A07E /* EditProfileViewController.swift in Sources */,
+				DD18AA50260232A8003436C1 /* FixJobsTableViewCell.swift in Sources */,
 				DD13E9CE25FA53A200D1A07E /* SearchResultViewController.swift in Sources */,
 				DD9EB75825FABBD5004DD922 /* Extensions.swift in Sources */,
 				DD13E95C25FA4EAD00D1A07E /* SceneDelegate.swift in Sources */,
@@ -646,7 +658,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -701,7 +713,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
