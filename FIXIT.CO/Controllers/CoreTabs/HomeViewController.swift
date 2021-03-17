@@ -7,8 +7,18 @@
 import FirebaseAuth
 import UIKit
 
-class HomeViewController: UIViewController {
+class ResultsVC: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemBackground
+    }
+}
 
+class HomeViewController: UIViewController, UISearchResultsUpdating {
+
+    let searchController = UISearchController(searchResultsController: ResultsVC())
+    
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.register(FixJobsTableViewCell.self,
@@ -19,9 +29,21 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Home"
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else {
+            return
+        }
+        let vc = searchController.searchResultsController as? ResultsVC
+        vc?.view.backgroundColor = .systemBackground
+        print(text)
     }
     
     override func viewDidLayoutSubviews() {

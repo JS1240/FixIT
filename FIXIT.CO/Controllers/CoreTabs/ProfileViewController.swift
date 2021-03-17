@@ -14,6 +14,7 @@ final class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Profile"
         view.backgroundColor = .systemBackground
         configureNavigationBar()
         
@@ -32,6 +33,7 @@ final class ProfileViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        view.backgroundColor = .systemBackground
         collectionView?.frame = view.bounds
     }
     

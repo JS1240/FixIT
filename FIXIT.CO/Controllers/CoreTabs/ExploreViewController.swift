@@ -8,19 +8,14 @@
 import UIKit
 
 class ExploreViewController: UIViewController {
-
-    private let searchBar: UISearchBar = {
-        let searchBar = UISearchBar()
-        searchBar.backgroundColor = .secondarySystemBackground
-        return searchBar
-    }()
     
     private var collectionView: UICollectionView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "My Tasks"
         view.backgroundColor = .systemBackground
-        navigationController?.navigationBar.topItem?.titleView = searchBar
+
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical

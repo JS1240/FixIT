@@ -11,6 +11,9 @@ class MyWorkersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "My Workers"
+        view.backgroundColor = .systemBackground
+        
 
         
     }
