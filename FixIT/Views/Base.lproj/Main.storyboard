@@ -266,7 +266,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="ZmI-ty-Oqw">
-                                <rect key="frame" x="20" y="98.5" width="374" height="663.5"/>
+                                <rect key="frame" x="20" y="77.5" width="374" height="684.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DUs-fB-PYc">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="158"/>
@@ -382,6 +382,12 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="K8D-t6-m4U">
+                                        <rect key="frame" x="0.0" y="684.5" width="374" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.5596004725" green="0.16152641179999999" blue="0.1459546387" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -396,6 +402,7 @@
                     <navigationItem key="navigationItem" id="L1h-iw-QSb"/>
                     <connections>
                         <outlet property="emailTextField" destination="vWG-0E-j3Y" id="lZl-LC-Gt2"/>
+                        <outlet property="errorLabel" destination="K8D-t6-m4U" id="AXm-JN-SVH"/>
                         <outlet property="fullNameTextField" destination="WaG-Hl-RvQ" id="cmh-5e-4oQ"/>
                         <outlet property="passwordTextField" destination="V8S-Be-v0K" id="YQz-Wt-nHN"/>
                         <segue destination="YT5-gR-0ph" kind="show" identifier="SignInToMainMenu" id="aH5-Ra-UgF"/>
@@ -426,7 +433,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="trt-Qu-TGo"/>
-        <segue reference="2JI-gZ-dGz"/>
+        <segue reference="aH5-Ra-UgF"/>
         <segue reference="Sic-R7-Rf0"/>
     </inferredMetricsTieBreakers>
     <resources>
