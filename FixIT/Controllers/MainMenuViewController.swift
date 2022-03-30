@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
+//  MainMenuViewController.swift
 //  FixIT
 //
-//  Created by Jure Šunić on 27/03/2022.
+//  Created by Jure Šunić on 30/03/2022.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
