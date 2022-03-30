@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -112,11 +113,11 @@
             <objects>
                 <viewController id="PYK-gB-l1O" customClass="LogInViewController" customModule="FixIT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iSO-lB-NQT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="8eh-w6-dG2">
-                                <rect key="frame" x="20" y="91.5" width="374" height="650.5"/>
+                                <rect key="frame" x="20" y="75.5" width="374" height="686.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zs6-8b-L7w">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="158"/>
@@ -154,7 +155,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="KWm-rN-IhR">
-                                        <rect key="frame" x="0.0" y="310" width="374" height="340.5"/>
+                                        <rect key="frame" x="0.0" y="310" width="374" height="376.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="fPM-Sd-9GI">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="198"/>
@@ -185,6 +186,9 @@
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <color key="baseBackgroundColor" red="0.16359186170000001" green="0.1497215033" blue="0.41243371369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="logInPressed:" destination="PYK-gB-l1O" eventType="touchUpInside" id="HbM-6z-b1K"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -219,6 +223,12 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="htr-Pf-A2q">
+                                                <rect key="frame" x="0.0" y="376.5" width="374" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.5596004725" green="0.16152641179999999" blue="0.1459546387" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -234,6 +244,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="AhA-rq-Orj"/>
                     <connections>
+                        <outlet property="emailTextfield" destination="r81-CT-wgf" id="HdE-aB-1eh"/>
+                        <outlet property="errorLabel" destination="htr-Pf-A2q" id="42M-AF-lRK"/>
+                        <outlet property="passwordTextfield" destination="N06-BN-nQj" id="TZE-le-A8A"/>
                         <segue destination="YT5-gR-0ph" kind="show" identifier="LogInToMainMenu" id="2JI-gZ-dGz"/>
                     </connections>
                 </viewController>
@@ -246,8 +259,23 @@
             <objects>
                 <viewController id="YT5-gR-0ph" customClass="MainMenuViewController" customModule="FixIT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9e5-ra-rhU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="guO-ng-ElT">
+                                <rect key="frame" x="0.0" y="830" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Home" id="Wa4-sZ-ZhK" userLabel="Home">
+                                        <imageReference key="image" image="house" catalog="system" symbolScale="default"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Item" id="g1j-AN-ueE"/>
+                                    <tabBarItem title="Item" id="obY-Ff-cOI"/>
+                                    <tabBarItem systemItem="more" id="5gp-VL-RXp"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="d6H-rK-Jhn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -262,11 +290,11 @@
             <objects>
                 <viewController id="KLe-6B-hhs" customClass="SignInViewController" customModule="FixIT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Igf-5H-DmS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="ZmI-ty-Oqw">
-                                <rect key="frame" x="20" y="77.5" width="374" height="684.5"/>
+                                <rect key="frame" x="20" y="97.5" width="374" height="684.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DUs-fB-PYc">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="158"/>
@@ -433,12 +461,13 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="trt-Qu-TGo"/>
-        <segue reference="aH5-Ra-UgF"/>
-        <segue reference="Sic-R7-Rf0"/>
+        <segue reference="2JI-gZ-dGz"/>
+        <segue reference="rno-wg-B2R"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AppIconImage.png" width="30" height="30"/>
         <image name="ImageLogSign.png" width="122.5" height="119.5"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
