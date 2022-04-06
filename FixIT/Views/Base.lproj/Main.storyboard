@@ -117,7 +117,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="8eh-w6-dG2">
-                                <rect key="frame" x="20" y="75.5" width="374" height="686.5"/>
+                                <rect key="frame" x="20" y="115.5" width="374" height="686.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zs6-8b-L7w">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="158"/>
@@ -160,7 +160,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="fPM-Sd-9GI">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="198"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="13" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="r81-CT-wgf">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="juresunic@hotmail.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="13" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="r81-CT-wgf">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="dhJ-0a-9g1"/>
@@ -168,7 +168,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="13" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="N06-BN-nQj">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456789" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="13" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="N06-BN-nQj">
                                                         <rect key="frame" x="0.0" y="74" width="374" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="beT-ex-lXK"/>
@@ -239,7 +239,7 @@
                         <constraints>
                             <constraint firstItem="Fsr-qN-PDr" firstAttribute="trailing" secondItem="8eh-w6-dG2" secondAttribute="trailing" constant="20" id="10a-dL-AwQ"/>
                             <constraint firstItem="8eh-w6-dG2" firstAttribute="leading" secondItem="Fsr-qN-PDr" secondAttribute="leading" constant="20" id="Oo9-qv-iGY"/>
-                            <constraint firstItem="Fsr-qN-PDr" firstAttribute="bottom" secondItem="8eh-w6-dG2" secondAttribute="bottom" constant="100" id="at2-3x-GRy"/>
+                            <constraint firstItem="Fsr-qN-PDr" firstAttribute="bottom" secondItem="8eh-w6-dG2" secondAttribute="bottom" constant="60" id="etZ-Y7-Enc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AhA-rq-Orj"/>
@@ -262,24 +262,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="guO-ng-ElT">
-                                <rect key="frame" x="0.0" y="830" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guO-ng-ElT">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem title="Home" id="Wa4-sZ-ZhK" userLabel="Home">
                                         <imageReference key="image" image="house" catalog="system" symbolScale="default"/>
                                     </tabBarItem>
-                                    <tabBarItem title="Item" id="g1j-AN-ueE"/>
-                                    <tabBarItem title="Item" id="obY-Ff-cOI"/>
-                                    <tabBarItem systemItem="more" id="5gp-VL-RXp"/>
+                                    <tabBarItem title="Tasks" image="hammer" catalog="system" id="g1j-AN-ueE"/>
+                                    <tabBarItem title="Favourites" image="heart" catalog="system" id="obY-Ff-cOI"/>
+                                    <tabBarItem title="Profile" id="5gp-VL-RXp">
+                                        <imageReference key="image" image="person" catalog="system" symbolScale="medium"/>
+                                    </tabBarItem>
                                 </items>
                             </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d6H-rK-Jhn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="guO-ng-ElT" firstAttribute="trailing" secondItem="d6H-rK-Jhn" secondAttribute="trailing" id="hj0-01-T4b"/>
+                            <constraint firstItem="guO-ng-ElT" firstAttribute="bottom" secondItem="d6H-rK-Jhn" secondAttribute="bottom" id="nIw-Im-9f2"/>
+                            <constraint firstItem="guO-ng-ElT" firstAttribute="leading" secondItem="d6H-rK-Jhn" secondAttribute="leading" id="pcD-bX-aE5"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="tTn-jm-Hqt"/>
+                    <navigationItem key="navigationItem" id="tTn-jm-Hqt">
+                        <barButtonItem key="rightBarButtonItem" title="LogOut" id="zWf-r2-zLf">
+                            <connections>
+                                <action selector="logOutPressed:" destination="YT5-gR-0ph" id="rH0-NM-WFw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMS-SP-lQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -294,7 +306,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="ZmI-ty-Oqw">
-                                <rect key="frame" x="20" y="97.5" width="374" height="684.5"/>
+                                <rect key="frame" x="20" y="127.5" width="374" height="684.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DUs-fB-PYc">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="158"/>
@@ -423,7 +435,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZmI-ty-Oqw" firstAttribute="leading" secondItem="foU-cZ-dGV" secondAttribute="leading" constant="20" id="63h-Mo-KDy"/>
-                            <constraint firstItem="foU-cZ-dGV" firstAttribute="bottom" secondItem="ZmI-ty-Oqw" secondAttribute="bottom" constant="80" id="6pI-Us-OTf"/>
+                            <constraint firstItem="foU-cZ-dGV" firstAttribute="bottom" secondItem="ZmI-ty-Oqw" secondAttribute="bottom" constant="50" id="SRq-BJ-kvm"/>
                             <constraint firstItem="foU-cZ-dGV" firstAttribute="trailing" secondItem="ZmI-ty-Oqw" secondAttribute="trailing" constant="20" id="hXG-cB-bIU"/>
                         </constraints>
                     </view>
@@ -467,7 +479,10 @@
     <resources>
         <image name="AppIconImage.png" width="30" height="30"/>
         <image name="ImageLogSign.png" width="122.5" height="119.5"/>
+        <image name="hammer" catalog="system" width="128" height="117"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

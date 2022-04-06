@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MainMenuViewController: UIViewController {
 
@@ -14,6 +15,17 @@ class MainMenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
+        
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+            
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+        }
+        
+    }
+    
 }
 
