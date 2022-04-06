@@ -15,6 +15,13 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Hides the back button 
+        navigationItem.hidesBackButton = true
+    }
+    
     @IBAction func signUpPressed(_ sender: UIButton) {
         
         if let email = emailTextField.text, let password = passwordTextField.text {

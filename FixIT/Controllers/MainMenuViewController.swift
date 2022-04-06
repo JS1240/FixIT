@@ -12,7 +12,9 @@ class MainMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // Hides the back button 
+        navigationItem.hidesBackButton = true
     }
 
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
