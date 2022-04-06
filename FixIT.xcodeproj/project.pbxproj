@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C507730627F3D4AE005CCD75 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507730527F3D4AE005CCD75 /* LogInViewController.swift */; };
 		C507730827F3D4D0005CCD75 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507730727F3D4D0005CCD75 /* SignInViewController.swift */; };
-		C507730A27F3D4E9005CCD75 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507730927F3D4E9005CCD75 /* MainMenuViewController.swift */; };
 		C574E17F27F1164D00ED842C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574E17E27F1164D00ED842C /* AppDelegate.swift */; };
 		C574E18127F1164D00ED842C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574E18027F1164D00ED842C /* SceneDelegate.swift */; };
 		C574E18327F1164D00ED842C /* LogSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574E18227F1164D00ED842C /* LogSignViewController.swift */; };
@@ -20,6 +19,10 @@
 		C574E1A027F1164D00ED842C /* FixITUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574E19F27F1164D00ED842C /* FixITUITests.swift */; };
 		C574E1A227F1164D00ED842C /* FixITUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574E1A127F1164D00ED842C /* FixITUITestsLaunchTests.swift */; };
 		C5766B1427FE21F000B0FD4B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5766B1327FE21F000B0FD4B /* Constants.swift */; };
+		C5766B1627FE44AF00B0FD4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5766B1527FE44AF00B0FD4B /* HomeViewController.swift */; };
+		C5766B1827FE45B600B0FD4B /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5766B1727FE45B500B0FD4B /* TasksViewController.swift */; };
+		C5766B1A27FE45C700B0FD4B /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5766B1927FE45C700B0FD4B /* FavouritesViewController.swift */; };
+		C5766B1C27FE45D600B0FD4B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5766B1B27FE45D600B0FD4B /* SettingsViewController.swift */; };
 		C5C6E5EB27F3DF830001BB9F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5C6E5EA27F3DF830001BB9F /* GoogleService-Info.plist */; };
 		C5C6E5EE27F3E04F0001BB9F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C5C6E5ED27F3E04F0001BB9F /* FirebaseAnalytics */; };
 		C5C6E5F027F3E04F0001BB9F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C5C6E5EF27F3E04F0001BB9F /* FirebaseAuth */; };
@@ -47,7 +50,6 @@
 /* Begin PBXFileReference section */
 		C507730527F3D4AE005CCD75 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		C507730727F3D4D0005CCD75 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		C507730927F3D4E9005CCD75 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		C574E17B27F1164D00ED842C /* FixIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FixIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C574E17E27F1164D00ED842C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C574E18027F1164D00ED842C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,10 @@
 		C574E19F27F1164D00ED842C /* FixITUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixITUITests.swift; sourceTree = "<group>"; };
 		C574E1A127F1164D00ED842C /* FixITUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixITUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C5766B1327FE21F000B0FD4B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C5766B1527FE44AF00B0FD4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C5766B1727FE45B500B0FD4B /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		C5766B1927FE45C700B0FD4B /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		C5766B1B27FE45D600B0FD4B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C5C6E5EA27F3DF830001BB9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +106,10 @@
 				C574E18227F1164D00ED842C /* LogSignViewController.swift */,
 				C507730527F3D4AE005CCD75 /* LogInViewController.swift */,
 				C507730727F3D4D0005CCD75 /* SignInViewController.swift */,
-				C507730927F3D4E9005CCD75 /* MainMenuViewController.swift */,
+				C5766B1527FE44AF00B0FD4B /* HomeViewController.swift */,
+				C5766B1727FE45B500B0FD4B /* TasksViewController.swift */,
+				C5766B1927FE45C700B0FD4B /* FavouritesViewController.swift */,
+				C5766B1B27FE45D600B0FD4B /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -307,9 +316,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C507730A27F3D4E9005CCD75 /* MainMenuViewController.swift in Sources */,
+				C5766B1A27FE45C700B0FD4B /* FavouritesViewController.swift in Sources */,
 				C507730627F3D4AE005CCD75 /* LogInViewController.swift in Sources */,
+				C5766B1827FE45B600B0FD4B /* TasksViewController.swift in Sources */,
+				C5766B1C27FE45D600B0FD4B /* SettingsViewController.swift in Sources */,
 				C574E18327F1164D00ED842C /* LogSignViewController.swift in Sources */,
+				C5766B1627FE44AF00B0FD4B /* HomeViewController.swift in Sources */,
 				C574E17F27F1164D00ED842C /* AppDelegate.swift in Sources */,
 				C5766B1427FE21F000B0FD4B /* Constants.swift in Sources */,
 				C507730827F3D4D0005CCD75 /* SignInViewController.swift in Sources */,

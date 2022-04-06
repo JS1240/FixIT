@@ -254,35 +254,99 @@
             </objects>
             <point key="canvasLocation" x="2073.913043478261" y="-342.1875"/>
         </scene>
-        <!--Main Menu View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="yyr-KJ-zFd">
             <objects>
-                <viewController id="YT5-gR-0ph" customClass="MainMenuViewController" customModule="FixIT" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eMS-SP-lQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="YT5-gR-0ph" customClass="HomeViewController" customModule="FixIT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9e5-ra-rhU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guO-ng-ElT">
-                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Home" id="Wa4-sZ-ZhK" userLabel="Home">
-                                        <imageReference key="image" image="house" catalog="system" symbolScale="default"/>
-                                    </tabBarItem>
-                                    <tabBarItem title="Tasks" image="hammer" catalog="system" id="g1j-AN-ueE"/>
-                                    <tabBarItem title="Favourites" image="heart" catalog="system" id="obY-Ff-cOI"/>
-                                    <tabBarItem title="Profile" id="5gp-VL-RXp">
-                                        <imageReference key="image" image="person" catalog="system" symbolScale="medium"/>
-                                    </tabBarItem>
-                                </items>
-                            </tabBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqk-UG-8Gy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <subviews>
+                                    <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guO-ng-ElT">
+                                        <rect key="frame" x="0.0" y="708" width="414" height="90"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="CbJ-sT-ju8"/>
+                                        </constraints>
+                                        <items>
+                                            <tabBarItem title="Home" id="Wa4-sZ-ZhK" userLabel="Home">
+                                                <imageReference key="image" image="house" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Tasks" id="g1j-AN-ueE">
+                                                <imageReference key="image" image="hammer" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="hammer.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Favourites" id="obY-Ff-cOI">
+                                                <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="heart.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Profile" id="5gp-VL-RXp">
+                                                <imageReference key="image" image="person" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                        </items>
+                                    </tabBar>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Scj-F4-gjV">
+                                        <rect key="frame" x="0.0" y="708" width="414" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nq-Aw-73c">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2p-aP-5p2">
+                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <segue destination="3Vd-Wq-CjF" kind="show" id="XfN-o5-I99"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcU-Q4-X2y">
+                                                <rect key="frame" x="207" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <segue destination="eJh-5x-qZY" kind="show" id="SgD-hl-P9u"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUl-bq-DVT">
+                                                <rect key="frame" x="310.5" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <segue destination="qwd-OD-u26" kind="show" id="6na-DR-q2V"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="iRy-P7-S8R"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Scj-F4-gjV" firstAttribute="leading" secondItem="mqk-UG-8Gy" secondAttribute="leading" id="7iA-Bh-M8G"/>
+                                    <constraint firstAttribute="trailing" secondItem="guO-ng-ElT" secondAttribute="trailing" id="XoP-xJ-1Kn"/>
+                                    <constraint firstAttribute="bottom" secondItem="Scj-F4-gjV" secondAttribute="bottom" id="gZF-lV-dwE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Scj-F4-gjV" secondAttribute="trailing" id="gkb-KE-JIr"/>
+                                    <constraint firstAttribute="bottom" secondItem="guO-ng-ElT" secondAttribute="bottom" id="grX-0d-LDm"/>
+                                    <constraint firstItem="guO-ng-ElT" firstAttribute="leading" secondItem="mqk-UG-8Gy" secondAttribute="leading" id="ykc-ER-eAK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d6H-rK-Jhn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="guO-ng-ElT" firstAttribute="trailing" secondItem="d6H-rK-Jhn" secondAttribute="trailing" id="hj0-01-T4b"/>
-                            <constraint firstItem="guO-ng-ElT" firstAttribute="bottom" secondItem="d6H-rK-Jhn" secondAttribute="bottom" id="nIw-Im-9f2"/>
-                            <constraint firstItem="guO-ng-ElT" firstAttribute="leading" secondItem="d6H-rK-Jhn" secondAttribute="leading" id="pcD-bX-aE5"/>
+                            <constraint firstItem="mqk-UG-8Gy" firstAttribute="leading" secondItem="d6H-rK-Jhn" secondAttribute="leading" id="6Ac-OH-8nm"/>
+                            <constraint firstItem="mqk-UG-8Gy" firstAttribute="top" secondItem="d6H-rK-Jhn" secondAttribute="top" id="82C-vz-7lY"/>
+                            <constraint firstAttribute="bottom" secondItem="mqk-UG-8Gy" secondAttribute="bottom" id="8Aa-SS-pWD"/>
+                            <constraint firstItem="d6H-rK-Jhn" firstAttribute="trailing" secondItem="mqk-UG-8Gy" secondAttribute="trailing" id="a4l-fC-Lef"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tTn-jm-Hqt">
@@ -293,9 +357,8 @@
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eMS-SP-lQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3247.826086956522" y="150.66964285714286"/>
+            <point key="canvasLocation" x="2958" y="-131"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="Bo9-0V-cQa">
@@ -470,21 +533,349 @@
             </objects>
             <point key="canvasLocation" x="15.942028985507248" y="67.633928571428569"/>
         </scene>
+        <!--Favourites View Controller-->
+        <scene sceneID="id2-xA-cuE">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mrm-PO-cxI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="eJh-5x-qZY" customClass="FavouritesViewController" customModule="FixIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kbI-dN-JJT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afh-Xt-uHg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <subviews>
+                                    <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3o-Hw-JkJ">
+                                        <rect key="frame" x="0.0" y="708" width="414" height="90"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="Faj-DE-awW"/>
+                                        </constraints>
+                                        <items>
+                                            <tabBarItem title="Home" id="eL0-Ku-v9K" userLabel="Home">
+                                                <imageReference key="image" image="house" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Tasks" id="Jbg-2h-Nvu">
+                                                <imageReference key="image" image="hammer" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="hammer.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Favourites" id="caR-uu-JAb">
+                                                <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="heart.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Profile" id="YsX-sY-vHw">
+                                                <imageReference key="image" image="person" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                        </items>
+                                    </tabBar>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bHy-AD-BCM">
+                                        <rect key="frame" x="0.0" y="708" width="414" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilb-7K-qfA">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <segue destination="YT5-gR-0ph" kind="show" id="x9h-gU-TtI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eye-0p-sAm">
+                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <segue destination="3Vd-Wq-CjF" kind="show" id="qfI-PM-D5F"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyC-Q5-o8z">
+                                                <rect key="frame" x="207" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebW-BJ-1to">
+                                                <rect key="frame" x="310.5" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <segue destination="qwd-OD-u26" kind="show" id="yCp-iT-hbv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="t2v-f8-4hY"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bHy-AD-BCM" secondAttribute="bottom" id="H5I-rA-6W5"/>
+                                    <constraint firstAttribute="trailing" secondItem="y3o-Hw-JkJ" secondAttribute="trailing" id="Jfu-tc-ifm"/>
+                                    <constraint firstItem="y3o-Hw-JkJ" firstAttribute="leading" secondItem="afh-Xt-uHg" secondAttribute="leading" id="TL7-kh-LIZ"/>
+                                    <constraint firstItem="bHy-AD-BCM" firstAttribute="leading" secondItem="afh-Xt-uHg" secondAttribute="leading" id="YPc-kr-rGc"/>
+                                    <constraint firstAttribute="trailing" secondItem="bHy-AD-BCM" secondAttribute="trailing" id="fl6-U1-zFh"/>
+                                    <constraint firstAttribute="bottom" secondItem="y3o-Hw-JkJ" secondAttribute="bottom" id="xUv-t0-yYw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lph-hD-A8k"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="afh-Xt-uHg" secondAttribute="bottom" id="Tbs-TI-68A"/>
+                            <constraint firstItem="afh-Xt-uHg" firstAttribute="leading" secondItem="Lph-hD-A8k" secondAttribute="leading" id="dpL-iv-KAo"/>
+                            <constraint firstItem="Lph-hD-A8k" firstAttribute="trailing" secondItem="afh-Xt-uHg" secondAttribute="trailing" id="gWl-TX-Jah"/>
+                            <constraint firstItem="afh-Xt-uHg" firstAttribute="top" secondItem="Lph-hD-A8k" secondAttribute="top" id="jSe-Jm-Lgu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VXo-Hy-cbX">
+                        <barButtonItem key="rightBarButtonItem" title="LogOut" id="GHy-sJ-8uI">
+                            <connections>
+                                <action selector="logOutPressed:" destination="eJh-5x-qZY" id="hQo-xX-lrh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3912" y="589"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="ddQ-Bq-e3E">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTb-0S-NLp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="qwd-OD-u26" customClass="SettingsViewController" customModule="FixIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oqe-Ha-VZd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0A-eP-Nex">
+                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <subviews>
+                                    <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SlU-Dg-ibb">
+                                        <rect key="frame" x="0.0" y="708" width="414" height="90"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="8VC-BR-bk8"/>
+                                        </constraints>
+                                        <items>
+                                            <tabBarItem title="Home" id="rUQ-xi-vSj" userLabel="Home">
+                                                <imageReference key="image" image="house" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Tasks" id="B6h-Uc-dLI">
+                                                <imageReference key="image" image="hammer" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="hammer.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Favourites" id="MZ2-xC-oBc">
+                                                <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="heart.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Profile" id="NeC-lD-PFS">
+                                                <imageReference key="image" image="person" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                        </items>
+                                    </tabBar>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ccc-yZ-ZsC">
+                                        <rect key="frame" x="0.0" y="708" width="414" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjD-Bf-B50">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <segue destination="YT5-gR-0ph" kind="show" id="dZ3-cF-dlx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8g-OR-yOf">
+                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <segue destination="3Vd-Wq-CjF" kind="show" id="UjV-0e-hCr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ik9-nL-Ndp">
+                                                <rect key="frame" x="207" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <segue destination="eJh-5x-qZY" kind="show" id="rh4-Z5-bTO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vD1-hb-aCj">
+                                                <rect key="frame" x="310.5" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="8Ug-cd-ULm"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="SlU-Dg-ibb" firstAttribute="leading" secondItem="S0A-eP-Nex" secondAttribute="leading" id="2pI-U7-TvH"/>
+                                    <constraint firstAttribute="bottom" secondItem="SlU-Dg-ibb" secondAttribute="bottom" id="F7N-Lu-U0m"/>
+                                    <constraint firstAttribute="trailing" secondItem="SlU-Dg-ibb" secondAttribute="trailing" id="Paa-kz-Y93"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ccc-yZ-ZsC" secondAttribute="bottom" id="Pfj-7k-67S"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ccc-yZ-ZsC" secondAttribute="trailing" id="ffA-ms-a5w"/>
+                                    <constraint firstItem="Ccc-yZ-ZsC" firstAttribute="leading" secondItem="S0A-eP-Nex" secondAttribute="leading" id="gto-Hb-dFk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="elJ-Pk-OgK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="elJ-Pk-OgK" firstAttribute="trailing" secondItem="S0A-eP-Nex" secondAttribute="trailing" id="00m-ex-n35"/>
+                            <constraint firstAttribute="bottom" secondItem="S0A-eP-Nex" secondAttribute="bottom" id="9iH-1k-b65"/>
+                            <constraint firstItem="S0A-eP-Nex" firstAttribute="leading" secondItem="elJ-Pk-OgK" secondAttribute="leading" id="X40-rS-6vm"/>
+                            <constraint firstItem="S0A-eP-Nex" firstAttribute="top" secondItem="elJ-Pk-OgK" secondAttribute="top" id="fVk-Ln-Oj7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SD6-PH-g9g">
+                        <barButtonItem key="rightBarButtonItem" title="LogOut" id="JGb-rQ-r9S">
+                            <connections>
+                                <action selector="logOutPressed:" destination="qwd-OD-u26" id="Hlf-mO-Flm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2958" y="792"/>
+        </scene>
+        <!--Tasks View Controller-->
+        <scene sceneID="jNK-ad-dje">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLX-61-ydR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="3Vd-Wq-CjF" customClass="TasksViewController" customModule="FixIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q9a-r0-0nj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjI-zY-8Hk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <subviews>
+                                    <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pfl-DT-hc4">
+                                        <rect key="frame" x="0.0" y="708" width="414" height="90"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="iiF-Ii-yMf"/>
+                                        </constraints>
+                                        <items>
+                                            <tabBarItem title="Home" id="jm7-dM-Zza" userLabel="Home">
+                                                <imageReference key="image" image="house" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Tasks" id="O5x-ci-mnA">
+                                                <imageReference key="image" image="hammer" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="hammer.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Favourites" id="ODY-FS-IFO">
+                                                <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="heart.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                            <tabBarItem title="Profile" id="cHZ-Wj-EUe">
+                                                <imageReference key="image" image="person" catalog="system" symbolScale="large"/>
+                                                <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="large"/>
+                                            </tabBarItem>
+                                        </items>
+                                    </tabBar>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ahg-U6-D3A">
+                                        <rect key="frame" x="0.0" y="708" width="414" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMh-c6-N0b">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <segue destination="YT5-gR-0ph" kind="show" id="Ksd-s8-m42"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gp4-wp-6GA">
+                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jh-SL-zyf">
+                                                <rect key="frame" x="207" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <segue destination="eJh-5x-qZY" kind="show" id="1aY-0I-qx9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfY-62-edJ">
+                                                <rect key="frame" x="310.5" y="0.0" width="103.5" height="90"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <segue destination="qwd-OD-u26" kind="show" id="nUQ-nc-UUf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="gWX-Zq-UiX"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstItem="Pfl-DT-hc4" firstAttribute="leading" secondItem="HjI-zY-8Hk" secondAttribute="leading" id="6Bb-Uw-mbu"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pfl-DT-hc4" secondAttribute="bottom" id="DOg-LW-iXM"/>
+                                    <constraint firstAttribute="bottom" secondItem="ahg-U6-D3A" secondAttribute="bottom" id="Yi1-nA-vex"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pfl-DT-hc4" secondAttribute="trailing" id="ns7-68-K3a"/>
+                                    <constraint firstAttribute="trailing" secondItem="ahg-U6-D3A" secondAttribute="trailing" id="ohz-Eh-Cic"/>
+                                    <constraint firstItem="ahg-U6-D3A" firstAttribute="leading" secondItem="HjI-zY-8Hk" secondAttribute="leading" id="pzl-Bw-1hH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w46-Ew-hve"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HjI-zY-8Hk" firstAttribute="leading" secondItem="w46-Ew-hve" secondAttribute="leading" id="al2-3z-ZAi"/>
+                            <constraint firstItem="HjI-zY-8Hk" firstAttribute="top" secondItem="w46-Ew-hve" secondAttribute="top" id="ca2-HY-po0"/>
+                            <constraint firstItem="w46-Ew-hve" firstAttribute="trailing" secondItem="HjI-zY-8Hk" secondAttribute="trailing" id="hd1-eI-v2d"/>
+                            <constraint firstAttribute="bottom" secondItem="HjI-zY-8Hk" secondAttribute="bottom" id="zeo-He-S0q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4BY-yg-vyC">
+                        <barButtonItem key="rightBarButtonItem" title="LogOut" id="56t-oc-Th9">
+                            <connections>
+                                <action selector="logOutPressed:" destination="3Vd-Wq-CjF" id="ykh-U8-wgG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3912" y="-131"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="UjV-0e-hCr"/>
+        <segue reference="yCp-iT-hbv"/>
+        <segue reference="rh4-Z5-bTO"/>
         <segue reference="trt-Qu-TGo"/>
-        <segue reference="2JI-gZ-dGz"/>
+        <segue reference="dZ3-cF-dlx"/>
         <segue reference="rno-wg-B2R"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AppIconImage.png" width="30" height="30"/>
         <image name="ImageLogSign.png" width="122.5" height="119.5"/>
         <image name="hammer" catalog="system" width="128" height="117"/>
+        <image name="hammer.fill" catalog="system" width="128" height="117"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

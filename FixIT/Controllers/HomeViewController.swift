@@ -1,33 +1,29 @@
 //
-//  MainMenuViewController.swift
+//  HomeViewController.swift
 //  FixIT
 //
-//  Created by Jure Šunić on 30/03/2022.
+//  Created by Jure Šunić on 06/04/2022.
 //
 
 import UIKit
 import Firebase
 
-class MainMenuViewController: UIViewController {
-
+class HomeViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "⚒️FixIT"
-        // Hides the back button 
-        navigationItem.hidesBackButton = true
-    }
-
-    @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
         
-        do {
-            try Auth.auth().signOut()
-            navigationController?.popToRootViewController(animated: true)
-            
-        } catch let signOutError as NSError {
-            print("Error signing out: %@", signOutError)
-        }
+        self.navigationItem.hidesBackButton = true
         
     }
     
-}
+    @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
 
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+        }
+    }
+}

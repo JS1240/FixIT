@@ -22,7 +22,7 @@ class LogInViewController: UIViewController {
     }
     
     
-    // Lo In button is pressed and it checks for the users in the database with the email and password auth
+    // Log In button is pressed and it checks for the users in the database with the email and password auth
     @IBAction func logInPressed(_ sender: UIButton) {
         if let email = emailTextfield.text, let password = passwordTextfield.text {
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
