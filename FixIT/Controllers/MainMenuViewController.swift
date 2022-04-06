@@ -12,7 +12,7 @@ class MainMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "⚒️FixIT"
         // Hides the back button 
         navigationItem.hidesBackButton = true
     }

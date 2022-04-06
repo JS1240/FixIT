@@ -30,7 +30,7 @@ class LogInViewController: UIViewController {
                     self.errorLabel.text = "Email or password is incorrect!"
                 } else {
                     // Navigate to the main menu
-                    self.performSegue(withIdentifier: "LogInToMainMenu", sender: self)
+                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
                     }
             }
         }

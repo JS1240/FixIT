@@ -19,6 +19,7 @@
 		C574E19627F1164D00ED842C /* FixITTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574E19527F1164D00ED842C /* FixITTests.swift */; };
 		C574E1A027F1164D00ED842C /* FixITUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574E19F27F1164D00ED842C /* FixITUITests.swift */; };
 		C574E1A227F1164D00ED842C /* FixITUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574E1A127F1164D00ED842C /* FixITUITestsLaunchTests.swift */; };
+		C5766B1427FE21F000B0FD4B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5766B1327FE21F000B0FD4B /* Constants.swift */; };
 		C5C6E5EB27F3DF830001BB9F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5C6E5EA27F3DF830001BB9F /* GoogleService-Info.plist */; };
 		C5C6E5EE27F3E04F0001BB9F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C5C6E5ED27F3E04F0001BB9F /* FirebaseAnalytics */; };
 		C5C6E5F027F3E04F0001BB9F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C5C6E5EF27F3E04F0001BB9F /* FirebaseAuth */; };
@@ -60,6 +61,7 @@
 		C574E19B27F1164D00ED842C /* FixITUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixITUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C574E19F27F1164D00ED842C /* FixITUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixITUITests.swift; sourceTree = "<group>"; };
 		C574E1A127F1164D00ED842C /* FixITUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixITUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C5766B1327FE21F000B0FD4B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C5C6E5EA27F3DF830001BB9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 				C574E18927F1164D00ED842C /* LaunchScreen.storyboard */,
 				C574E18C27F1164D00ED842C /* Info.plist */,
 				C5C6E5EA27F3DF830001BB9F /* GoogleService-Info.plist */,
+				C5766B1327FE21F000B0FD4B /* Constants.swift */,
 			);
 			path = FixIT;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				C507730627F3D4AE005CCD75 /* LogInViewController.swift in Sources */,
 				C574E18327F1164D00ED842C /* LogSignViewController.swift in Sources */,
 				C574E17F27F1164D00ED842C /* AppDelegate.swift in Sources */,
+				C5766B1427FE21F000B0FD4B /* Constants.swift in Sources */,
 				C507730827F3D4D0005CCD75 /* SignInViewController.swift in Sources */,
 				C574E18127F1164D00ED842C /* SceneDelegate.swift in Sources */,
 			);

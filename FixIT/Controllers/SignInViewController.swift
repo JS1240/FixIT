@@ -31,7 +31,7 @@ class SignInViewController: UIViewController {
                 self.errorLabel.text = "There is a problem with one of the inputs!"
             } else {
                 // Navigate to the main menu
-                self.performSegue(withIdentifier: "SignInToMainMenu", sender: self)
+                self.performSegue(withIdentifier: K.signinSegue, sender: self)
                 }
             }
         }
