@@ -13,5 +13,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "⚒️FixIT"
+        self.navigationItem.hidesBackButton = true
     }
 }
