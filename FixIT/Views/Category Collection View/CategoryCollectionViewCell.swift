@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CategoryCollectionViewCell: UICollectionViewCell {
 
@@ -13,6 +14,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var categoryTitleLabel: UILabel!
     
     func setup(category: ServiceCategory) {
-        
+        categoryTitleLabel.text = category.name
+        categoryImageView.kf.setImage(with: <#T##Source?#>)
     }
 }
